@@ -1,34 +1,60 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { Routes, Route } from 'react-router-dom'
+
+// Public Pages (empty for now — we fill these next)
+const Home = () => <div className="text-white p-8">Home Page</div>
+const About = () => <div className="text-white p-8">About Page</div>
+const Sermons = () => <div className="text-white p-8">Sermons Page</div>
+const LiveStream = () => <div className="text-white p-8">Live Stream Page</div>
+const Ministries = () => <div className="text-white p-8">Ministries Page</div>
+const Events = () => <div className="text-white p-8">Events Page</div>
+const Gallery = () => <div className="text-white p-8">Gallery Page</div>
+const PrayerRequests = () => <div className="text-white p-8">Prayer Requests Page</div>
+const Testimonies = () => <div className="text-white p-8">Testimonies Page</div>
+const Blog = () => <div className="text-white p-8">Blog Page</div>
+const BibleSchool = () => <div className="text-white p-8">Bible School Page</div>
+const DigitalLibrary = () => <div className="text-white p-8">Digital Library Page</div>
+const TVMedia = () => <div className="text-white p-8">TV/Media Page</div>
+const Donate = () => <div className="text-white p-8">Donate Page</div>
+const Membership = () => <div className="text-white p-8">Membership Page</div>
+const Contact = () => <div className="text-white p-8">Contact Page</div>
+const FAQ = () => <div className="text-white p-8">FAQ Page</div>
+const Privacy = () => <div className="text-white p-8">Privacy Policy Page</div>
+const Terms = () => <div className="text-white p-8">Terms & Conditions Page</div>
+
+// Admin Pages (empty for now)
+const AdminLogin = () => <div className="text-white p-8">Admin Login</div>
+const AdminDashboard = () => <div className="text-white p-8">Admin Dashboard</div>
+const VideoCMS = () => <div className="text-white p-8">Video CMS</div>
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <Routes>
+      {/* Public Routes */}
+      <Route path="/" element={<Home />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/sermons" element={<Sermons />} />
+      <Route path="/live" element={<LiveStream />} />
+      <Route path="/ministries" element={<Ministries />} />
+      <Route path="/events" element={<Events />} />
+      <Route path="/gallery" element={<Gallery />} />
+      <Route path="/prayer-requests" element={<PrayerRequests />} />
+      <Route path="/testimonies" element={<Testimonies />} />
+      <Route path="/blog" element={<Blog />} />
+      <Route path="/bible-school" element={<BibleSchool />} />
+      <Route path="/digital-library" element={<DigitalLibrary />} />
+      <Route path="/tv-media" element={<TVMedia />} />
+      <Route path="/donate" element={<Donate />} />
+      <Route path="/membership" element={<Membership />} />
+      <Route path="/contact" element={<Contact />} />
+      <Route path="/faq" element={<FAQ />} />
+      <Route path="/privacy" element={<Privacy />} />
+      <Route path="/terms" element={<Terms />} />
+
+      {/* Admin Routes */}
+      <Route path="/admin" element={<AdminLogin />} />
+      <Route path="/admin/dashboard" element={<AdminDashboard />} />
+      <Route path="/admin/videos" element={<VideoCMS />} />
+    </Routes>
   )
 }
 
