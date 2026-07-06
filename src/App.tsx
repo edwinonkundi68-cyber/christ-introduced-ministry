@@ -4,10 +4,12 @@ import Home from './pages/public/Home'
 import About from './pages/public/About'
 import VisionMission from './pages/public/VisionMission'
 import Leadership from './pages/public/Leadership'
+import Sermons from './pages/public/Sermons'
+import LiveStream from './pages/public/LiveStream'
+import TVMedia from './pages/public/TVMedia'
+import DigitalLibrary from './pages/public/DigitalLibrary'
 
 // Public Pages
-const Sermons = () => <div className="text-white p-8">Sermons Page</div>
-const LiveStream = () => <div className="text-white p-8">Live Stream Page</div>
 const Ministries = () => <div className="text-white p-8">Ministries Page</div>
 const Events = () => <div className="text-white p-8">Events Page</div>
 const Gallery = () => <div className="text-white p-8">Gallery Page</div>
@@ -15,8 +17,6 @@ const PrayerRequests = () => <div className="text-white p-8">Prayer Requests Pag
 const Testimonies = () => <div className="text-white p-8">Testimonies Page</div>
 const Blog = () => <div className="text-white p-8">Blog Page</div>
 const BibleSchool = () => <div className="text-white p-8">Bible School Page</div>
-const DigitalLibrary = () => <div className="text-white p-8">Digital Library Page</div>
-const TVMedia = () => <div className="text-white p-8">TV/Media Page</div>
 const Donate = () => <div className="text-white p-8">Donate Page</div>
 const Membership = () => <div className="text-white p-8">Membership Page</div>
 const Contact = () => <div className="text-white p-8">Contact Page</div>
