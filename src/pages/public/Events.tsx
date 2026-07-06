@@ -1,4 +1,4 @@
-import { Calendar, Clock, MapPin, ArrowRight } from 'lucide-react'
+import { Clock, MapPin, ArrowRight } from 'lucide-react'
 
 const events = [
   { id: 1, title: 'Sunday Service', date: 'July 13, 2026', time: '8:00 AM & 10:30 AM', location: 'Main Auditorium', category: 'Service', description: 'Join us for our weekly Sunday service filled with worship, prayer, and the Word.' },

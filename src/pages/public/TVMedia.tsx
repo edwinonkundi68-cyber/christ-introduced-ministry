@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Play, Tv, Radio, Headphones } from 'lucide-react'
+import { Play, Tv, Headphones } from 'lucide-react'
 
 const mediaContent = [
   { id: 1, title: 'CIM TV — Morning Devotion', type: 'TV', duration: '30 min', date: 'July 6, 2026' },
