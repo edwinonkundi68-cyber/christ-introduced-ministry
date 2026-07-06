@@ -87,7 +87,7 @@ const Navbar = () => {
 
               {/* Dropdown */}
               {link.dropdown && activeDropdown === link.label && (
-                <div className="absolute top-full left-0 mt-2 w-48 glass rounded-xl border border-white/10 py-2 shadow-xl">
+                <div className="absolute top-full left-0 mt-2 w-48 bg-zinc-900/95 backdrop-blur-md rounded-xl border border-white/10 py-2 shadow-xl">
                   {link.dropdown.map((item) => (
                     <Link
                       key={item.path}

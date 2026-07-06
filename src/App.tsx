@@ -1,9 +1,11 @@
 import { Routes, Route } from 'react-router-dom'
 import MasterLayout from './components/layout/MasterLayout'
 import Home from './pages/public/Home'
+import About from './pages/public/About'
+import VisionMission from './pages/public/VisionMission'
+import Leadership from './pages/public/Leadership'
 
 // Public Pages
-const About = () => <div className="text-white p-8">About Page</div>
 const Sermons = () => <div className="text-white p-8">Sermons Page</div>
 const LiveStream = () => <div className="text-white p-8">Live Stream Page</div>
 const Ministries = () => <div className="text-white p-8">Ministries Page</div>
@@ -34,6 +36,8 @@ function App() {
       <Route element={<MasterLayout />}>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/vision-mission" element={<VisionMission />} />
+        <Route path="/leadership" element={<Leadership />} />
         <Route path="/sermons" element={<Sermons />} />
         <Route path="/live" element={<LiveStream />} />
         <Route path="/ministries" element={<Ministries />} />
