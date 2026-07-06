@@ -1,6 +1,7 @@
 import { Routes, Route } from 'react-router-dom'
+import MasterLayout from './components/layout/MasterLayout'
 
-// Public Pages (empty for now — we fill these next)
+// Public Pages
 const Home = () => <div className="text-white p-8">Home Page</div>
 const About = () => <div className="text-white p-8">About Page</div>
 const Sermons = () => <div className="text-white p-8">Sermons Page</div>
@@ -21,7 +22,7 @@ const FAQ = () => <div className="text-white p-8">FAQ Page</div>
 const Privacy = () => <div className="text-white p-8">Privacy Policy Page</div>
 const Terms = () => <div className="text-white p-8">Terms & Conditions Page</div>
 
-// Admin Pages (empty for now)
+// Admin Pages
 const AdminLogin = () => <div className="text-white p-8">Admin Login</div>
 const AdminDashboard = () => <div className="text-white p-8">Admin Dashboard</div>
 const VideoCMS = () => <div className="text-white p-8">Video CMS</div>
@@ -29,28 +30,30 @@ const VideoCMS = () => <div className="text-white p-8">Video CMS</div>
 function App() {
   return (
     <Routes>
-      {/* Public Routes */}
-      <Route path="/" element={<Home />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/sermons" element={<Sermons />} />
-      <Route path="/live" element={<LiveStream />} />
-      <Route path="/ministries" element={<Ministries />} />
-      <Route path="/events" element={<Events />} />
-      <Route path="/gallery" element={<Gallery />} />
-      <Route path="/prayer-requests" element={<PrayerRequests />} />
-      <Route path="/testimonies" element={<Testimonies />} />
-      <Route path="/blog" element={<Blog />} />
-      <Route path="/bible-school" element={<BibleSchool />} />
-      <Route path="/digital-library" element={<DigitalLibrary />} />
-      <Route path="/tv-media" element={<TVMedia />} />
-      <Route path="/donate" element={<Donate />} />
-      <Route path="/membership" element={<Membership />} />
-      <Route path="/contact" element={<Contact />} />
-      <Route path="/faq" element={<FAQ />} />
-      <Route path="/privacy" element={<Privacy />} />
-      <Route path="/terms" element={<Terms />} />
+      {/* All public routes wrapped in MasterLayout */}
+      <Route element={<MasterLayout />}>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/sermons" element={<Sermons />} />
+        <Route path="/live" element={<LiveStream />} />
+        <Route path="/ministries" element={<Ministries />} />
+        <Route path="/events" element={<Events />} />
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/prayer-requests" element={<PrayerRequests />} />
+        <Route path="/testimonies" element={<Testimonies />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/bible-school" element={<BibleSchool />} />
+        <Route path="/digital-library" element={<DigitalLibrary />} />
+        <Route path="/tv-media" element={<TVMedia />} />
+        <Route path="/donate" element={<Donate />} />
+        <Route path="/membership" element={<Membership />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/faq" element={<FAQ />} />
+        <Route path="/privacy" element={<Privacy />} />
+        <Route path="/terms" element={<Terms />} />
+      </Route>
 
-      {/* Admin Routes */}
+      {/* Admin routes — no MasterLayout */}
       <Route path="/admin" element={<AdminLogin />} />
       <Route path="/admin/dashboard" element={<AdminDashboard />} />
       <Route path="/admin/videos" element={<VideoCMS />} />

@@ -4,6 +4,9 @@ import { BrowserRouter } from 'react-router-dom'
 import './index.css'
 import App from './App.tsx'
 
+// Apply dark mode by default
+document.documentElement.classList.add('dark')
+
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <BrowserRouter>
