@@ -8,11 +8,11 @@ import Sermons from './pages/public/Sermons'
 import LiveStream from './pages/public/LiveStream'
 import TVMedia from './pages/public/TVMedia'
 import DigitalLibrary from './pages/public/DigitalLibrary'
+import Ministries from './pages/public/Ministries'
+import Events from './pages/public/Events'
+import Gallery from './pages/public/Gallery'
 
 // Public Pages
-const Ministries = () => <div className="text-white p-8">Ministries Page</div>
-const Events = () => <div className="text-white p-8">Events Page</div>
-const Gallery = () => <div className="text-white p-8">Gallery Page</div>
 const PrayerRequests = () => <div className="text-white p-8">Prayer Requests Page</div>
 const Testimonies = () => <div className="text-white p-8">Testimonies Page</div>
 const Blog = () => <div className="text-white p-8">Blog Page</div>
