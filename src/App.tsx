@@ -1,8 +1,8 @@
 import { Routes, Route } from 'react-router-dom'
 import MasterLayout from './components/layout/MasterLayout'
+import Home from './pages/public/Home'
 
 // Public Pages
-const Home = () => <div className="text-white p-8">Home Page</div>
 const About = () => <div className="text-white p-8">About Page</div>
 const Sermons = () => <div className="text-white p-8">Sermons Page</div>
 const LiveStream = () => <div className="text-white p-8">Live Stream Page</div>
