@@ -11,11 +11,11 @@ import DigitalLibrary from './pages/public/DigitalLibrary'
 import Ministries from './pages/public/Ministries'
 import Events from './pages/public/Events'
 import Gallery from './pages/public/Gallery'
+import PrayerRequests from './pages/public/PrayerRequests'
+import Testimonies from './pages/public/Testimonies'
+import Blog from './pages/public/Blog'
 
 // Public Pages
-const PrayerRequests = () => <div className="text-white p-8">Prayer Requests Page</div>
-const Testimonies = () => <div className="text-white p-8">Testimonies Page</div>
-const Blog = () => <div className="text-white p-8">Blog Page</div>
 const BibleSchool = () => <div className="text-white p-8">Bible School Page</div>
 const Donate = () => <div className="text-white p-8">Donate Page</div>
 const Membership = () => <div className="text-white p-8">Membership Page</div>
